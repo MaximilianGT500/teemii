@@ -223,7 +223,7 @@ async function downloadAssets (manga) {
 
       // proxy image
       const urlBase64 = Buffer.from(url).toString('base64')
-      let proxyUrl = `https://wsrv.nl/?url=https://services.f-ck.me/v1/image/${urlBase64}`
+      let proxyUrl = `https://services.f-ck.me/v1/image/${urlBase64}`
 
       // if source is bato, use the original url
       if (source === 'bato') proxyUrl = url
