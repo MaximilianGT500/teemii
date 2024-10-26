@@ -122,7 +122,7 @@ class Mangadex extends Agent {
         if (cover) {
           const url = 'https://uploads.mangadex.org/covers/' + iteratee.id + '/' + cover + '.256.jpg'
           const urlBase64 = Buffer.from(url).toString('base64')
-          const proxyUrl = `https://wsrv.nl/?url=https://services.f-ck.me/v1/image/${urlBase64}`
+          const proxyUrl = `https://services.f-ck.me/v1/image/${urlBase64}`
           return proxyUrl
         }
         return null
