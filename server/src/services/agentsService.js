@@ -362,7 +362,7 @@ module.exports = class AgentsService {
       // proxy the cover image
       finalResults.forEach(result => {
         const urlBase64 = Buffer.from(result.cover).toString('base64')
-        result.cover = `https://wsrv.nl/?url=https://services.f-ck.me/v1/image/${urlBase64}&w=240&h=360`
+        result.cover = `https://services.f-ck.me/v1/image/${urlBase64}&w=240&h=360`
       })
 
       // order final results by score
